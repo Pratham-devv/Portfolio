@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors from your generated image */
+  --color-obsidian: #02040a;
+  --color-neon-cyan: #00F5FF;
+  --color-neon-purple: #9D00FF;
+  
+
+  /* Custom HUD Animations */
+  @keyframes spin-slow {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes sweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  @keyframes spin-reverse {
+    from { transform: translate(-50%, -50%) rotate(360deg); }
+    to { transform: translate(-50%, -50%) rotate(0deg); }
+  }
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+
+  --animate-spin-slow: spin-slow 20s linear infinite;
+  --animate-spin-rev: spin-reverse 40s linear infinite;
+  --animate-sweep: sweep 3s linear infinite;
+  --animate-typing: typing 2s steps(20) infinite;
+  --animate-blink: blink 1s step-end infinite;
+  --animate-glitch: glitch 1s linear infinite;
+}
+
+@layer components {
+  .glass-card {
+    @apply relative overflow-hidden bg-white/2 backdrop-blur-3xl 
+           border border-white/5 rounded-3xl md:rounded-[2.5rem] 
+           flex flex-col h-full transition-all duration-700;
+  }
+}
+
+body {
+  @apply bg-obsidian text-white overflow-x-hidden
+  cursor-none;
+}
