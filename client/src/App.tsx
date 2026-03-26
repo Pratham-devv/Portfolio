@@ -2,7 +2,7 @@ import LiveBackground from "./components/Background";
 import { Navbar } from "./components/NavBar";
 
 import { CustomCursor } from "./components/ui/cursor";
-
+import { Footer } from "./components/Footer";
 import { BrowserRouter as Router, Routes } from "react-router";
 import { Route } from "react-router-dom";
 
@@ -23,6 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </main>
   );

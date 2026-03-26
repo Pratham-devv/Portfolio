@@ -1,4 +1,5 @@
-import { motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   return (
@@ -20,7 +21,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <span className="text-neon-cyan font-mono text-xs tracking-[0.5em] mb-4 block uppercase">
-              // Creative Developer & Architect
+              // Freelance Web-App Engineer
             </span>
             <h1 className="text-6xl md:text-8xl font-black italic tracking-tighter leading-[0.9] uppercase">
               Building <br />
@@ -45,8 +46,8 @@ export const Hero = () => {
               <span className="text-neon-cyan">STABLE</span>
             </div>
             <p className="text-xs leading-relaxed text-gray-300 font-medium">
-              Specializing in high-performance frontend architectures where motion meets technical precision. 
-              Currently exploring WebGL and Fluid Dynamics.
+              Freelance Full-Stack Developer specializing in scalable web apps, backend APIs, and AI-focused solutions. 
+              I build intelligent, high-performance systems from the database to the interface.
             </p>
             <div className="flex gap-2">
               <div className="h-1 w-full bg-white/5 rounded-full overflow-hidden">
@@ -70,14 +71,16 @@ export const Hero = () => {
           <Metric label="Location" value="Remote / UTC" />
         </div>
 
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="group relative px-10 py-5 bg-white text-black font-bold uppercase text-xs tracking-widest rounded-full overflow-hidden"
-        >
-          <span className="relative z-10">Explore Archive _</span>
-          <div className="absolute inset-0 bg-neon-cyan translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-        </motion.button>
+        <Link to="/contact">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="group relative px-10 py-5 bg-white text-black font-bold uppercase text-xs tracking-widest rounded-full overflow-hidden"
+          >
+            <span className="relative z-10">Hire Me _</span>
+            <div className="absolute inset-0 bg-neon-cyan translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+          </motion.button>
+        </Link>
       </div>
 
     </section>
