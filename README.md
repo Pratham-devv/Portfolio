@@ -4,7 +4,7 @@ My personal portfolio website showcasing my projects, skills, and experience as 
 
 ## 🌐 Live Demo
 
-[**View Portfolio**](https://portfolio-hazel-nine-z00u7cbq3x.vercel.app/)
+[**View Portfolio**](https://portfolio-pratham-devvs-projects.vercel.app)
 
 ## ✨ Features
 
