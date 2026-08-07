@@ -167,7 +167,7 @@ export default function ContactPage() {
             <FileText className="text-emerald-400 mb-1 w-4 h-4 md:w-5 md:h-5" />
             <p className="text-slate-500 text-[8px] md:text-[10px] uppercase tracking-tighter">Access_Doc</p>
             <a 
-              href="https://drive.google.com/..." 
+              href="https://drive.google.com/file/d/1Kaw71YucVT10mF-ivqfhlt4SbXcyvKcC/view?usp=sharing" 
               target="_blank" 
               rel="noreferrer"
               className="text-[10px] md:text-xs font-bold hover:text-emerald-300 transition-colors uppercase"
